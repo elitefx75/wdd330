@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book & Movie Companion</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+  <header>
+    <div class="logo">📚🎬 Book & Movie Companion</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Favorites</a>
+      <a href="#">Profile</a>
+      <button class="login-btn">Log In</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h1>Find Your Next Book or Movie</h1>
+      <input type="text" id="searchInput" placeholder="Search for a book or movie...">
+      <div class="search-buttons">
+        <button onclick="search('book')">Find a Book → Movie</button>
+        <button onclick="search('movie')">Find a Movie → Book</button>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Pairings</h2>
+      <div class="pairings" id="pairingsContainer">
+        <!-- Dynamic content will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/project.js"></script>
+</body>
+</html>
